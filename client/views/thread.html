@@ -1,0 +1,108 @@
+<ul>
+    <li style="font-size: x-large;"><a href="http://localhost:1337/thread2">[  Post  ] </a></li>
+</ul>
+
+<body>
+    <div class="top-bar">
+        <h1>
+            My Feed 
+        </h1>
+    </div>
+    <ol>
+        <li class= "row">
+            <a href="/item">
+                <h4 class="title">
+                    Thread 1
+                </h4>
+                <div class="bottom">
+                    <p class="timestamp">
+                        4/7/22
+                    </p>
+                    <p class="comment-count">
+                        3 comments
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class= "row">
+            <a href="/item">
+                <h4 class="title">
+                    Thread 2
+                </h4>
+                <div class="bottom">
+                    <p class="timestamp">
+                        4/7/22
+                    </p>
+                    <p class="comment-count">
+                        5 comments
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ol>
+    </div>
+    <script src="thread.js"></script>
+    <script>
+        console.log(threads);
+        var container =document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class= "row">
+                <a href="/item">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+    <style>
+        body {
+            margin: 10px 60px;
+        }
+        
+        a {
+            text-decoration:none;
+            color: black;
+        }
+        h1, h4, ol {
+            margin: 0 ;
+        }
+        
+        p {
+            margin: 5px 0;
+        }
+        .top-bar {
+            background-color: skyblue;
+            padding: 0  40px;
+        }
+        .main {
+            background-color:rgb(241, 241, 241);
+            padding: 10px 40px;
+        }
+        
+        .row {
+            padding: 5px 0;
+        }
+        
+        .bottom {
+            display: flex;
+            color: grey;
+            font-size: 12px;
+        }
+        
+        .timestamp {
+            padding-right: 10px;
+        }
+    </style>
+</body>
