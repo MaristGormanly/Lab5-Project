@@ -18,12 +18,12 @@ giffs.push(timmyt);
 giffs.push(abeeee3214);
 
 // send entire users array as the body of the response as json
-exports.getAllgiffs = ( req, res) => {
+exports.getAllgiffs = (req, res) => {
     res.setHeader('Content-Type' ,'application/json');
     res.send(giffs);
 }
 //retrieve the user in the index parameter of the request and return as json
-exports.getgiff = ( req, res) => {
+exports.getgiff = (req, res) => {
     res.setHeader('Content-Type' ,'application/json');
     res.send(giff[req.params.index]);
 }
@@ -33,5 +33,5 @@ exports.savegiff = ( req, res ) => {
     let newgiff = giff.creategiff( req.body.username, req.body.email, req.body.password);
     users.push( newgiff);
     res.setHeader( 'Content-Type', 'application/json' );
-    res.send( giff );
+    res.send(giffs);
 }

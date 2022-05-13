@@ -19,6 +19,10 @@ app.get('/thread2', function (req, res) {
     res.sendFile('thread2.html', {root: './client/views' })
 })
 
+app.get('/signup', function (req,res) {
+    res.sendFile('signup.html', {root:'./client/views' })
+})
+
 app.post('/page1.html', async (rec,res) => {
     res.header('Content-Type', 'text/html; charset-utf-8');
         res.redirect(303, '/page1');
@@ -46,6 +50,9 @@ app.use(express.static('client/public'));
 // Include the userRoutes module and api routing
 let userRoutes = require('./route/userRoutes');
 app.use('/api/user', userRoutes);
+
+let profileroutes = require('./route/profileroutes');
+app.use('/profile', profileroutes);
 
 let userController = require('./controller/userController');
 

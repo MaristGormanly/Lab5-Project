@@ -19,7 +19,7 @@ router.route('/')
     });
 
 // user by array index route
-router.route('/')
+router.route('/:index')
     .get((req, res) => {
         userController.getUser(req, res);
     })

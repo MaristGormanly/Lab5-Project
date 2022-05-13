@@ -3,6 +3,14 @@ console.log("[userController] initialized");
 
 let user = require('../model/user');
 
+exports.getAllUsers = async (req,res) => {
+    var users = await
+    userServices.getAllUsers();
+    res.setHeader('Content-Type', 'application/json');
+    res.send(users[req.params.index]);
+}
+
+
 //creates an array to hold the created users
 let users = [];
 
