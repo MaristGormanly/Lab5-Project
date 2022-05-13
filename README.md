@@ -22,20 +22,21 @@ write out the script)
 4. Go back once more into your console and type out: npm start
 
 5. The server will be running at that point this where you'll see the message saying "Listening on port1337!"
-<img width="1440" alt="Screen Shot 2022-05-12 at 9 59 53 PM" src="https://user-images.githubusercontent.com/79177105/168196367-6f287dc4-1228-4c1f-9439-368f5b12bc05.png">
+
 
 
 
 # How to use the site 
 
-1. First you'll see the homepage, you have 3 choices. Choose a user and Sign In. Additionally you have the option to read a terms and conditions. 
+1. First you'll see the homepage, you have 3 choices. choose a user and Sign In. Additionally you have the option to read a terms and conditions.
+<img width="1440" alt="Screen Shot 2022-05-12 at 10 03 19 PM" src="https://user-images.githubusercontent.com/79177105/168196684-c70f7998-e5c8-4108-a03a-e402dedba6ff.png"> 
 2. After you choose a user you be prompted to this page. 
 <img width="1440" alt="Screen Shot 2022-05-12 at 9 53 34 PM" src="https://user-images.githubusercontent.com/79177105/168195723-2f21c253-7c76-4176-af60-52179c63a6f3.png">
 3. After you choose a user you'll be prompted to this screen, from there you can upload your message, I chose my nme for this demonstration. 
 <img width="1440" alt="Screen Shot 2022-05-12 at 9 55 04 PM" src="https://user-images.githubusercontent.com/79177105/168195970-6ada3004-7728-4dd8-bc2c-6a416705dd0e.png">
 
 4. After you post your message, the site  will update with their message being sent. 
-
+<img width="1440" alt="Screen Shot 2022-05-12 at 10 04 22 PM" src="https://user-images.githubusercontent.com/79177105/168196797-5c0b644b-ac86-4d19-9bd8-60764701bcf2.png">
 
 # Usage
 git clone this repository
