@@ -27,7 +27,7 @@ write out the script)
 
 
 # How to use the site 
-<img width="1440" alt="Screen Shot 2022-05-12 at 9 50 16 PM" src="https://user-images.githubusercontent.com/79177105/168195336-95f190e2-3f5b-4303-b42d-8870ff63461a.png">
+
 1. First you'll see the homepage, you have 3 choices. Choose a user and Sign In. Additionally you have the option to read a terms and conditions. 
 2. After you choose a user you be prompted to this page. 
 <img width="1440" alt="Screen Shot 2022-05-12 at 9 53 34 PM" src="https://user-images.githubusercontent.com/79177105/168195723-2f21c253-7c76-4176-af60-52179c63a6f3.png">
